@@ -12,6 +12,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.organeco.R
 import com.organeco.model.local.entity.Recommendation
 import com.organeco.databinding.ActivityCalculatorBinding
+import com.organeco.model.builder.CalculatorRequestBuilder
 import com.organeco.model.remote.utils.MediatorResult
 import com.organeco.view.activity.MainActivity
 import com.organeco.view.activity.result.ResultActivity
@@ -111,6 +112,17 @@ class CalculatorActivity : AppCompatActivity() {
         val nitrogen = Integer.parseInt(binding.edNitrogen.text.toString())
         val potassium = Integer.parseInt(binding.edPotassium.text.toString())
         val phosphorous = Integer.parseInt(binding.edPhosphorous.text.toString())
+
+        val request = CalculatorRequestBuilder()
+            .setTemperature(temperature)
+            .setHumidity(humidity)
+            .setMoisture(moisture)
+            .setSoilType(soilType)
+            .setCropType(cropType)
+            .setNitrogen(nitrogen)
+            .setPotassium(potassium)
+            .setPhosphorous(phosphorous)
+            .build()
 
         calculatorViewModel.postCalculate(
             temperature,
