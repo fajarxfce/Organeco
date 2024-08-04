@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.activity.result.ResultActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:titleTextColor="@android:color/white" />
+
+    <ImageButton
+        android:id="@+id/btnBack"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/gray_000"
+        android:contentDescription="@string/arrow_back"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar"
+        app:layout_constraintStart_toStartOf="@+id/toolbar"
+        app:layout_constraintTop_toTopOf="@+id/toolbar"
+        app:srcCompat="@drawable/ic_baseline_arrow_back_24" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray_500"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <Button
+        android:id="@+id/btnSave"
+        style="@style/textH4White"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_margin="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/rounded_bg_button"
+        android:text="@string/save"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toTopOf="@+id/btnHome"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_prompt"
+        style="@style/textH3Black"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="@string/fertilizer_that_suits_you"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+    <TextView
+        android:id="@+id/tv_result"
+        style="@style/textH1Black"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="30dp"
+        android:text="@string/fertilizer_type"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_prompt" />
+
+    <TextView
+        android:id="@+id/tv_input"
+        style="@style/textRegular4Black"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/input"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_result" />
+
+    <TextView
+        android:id="@+id/textView3"
+        style="@style/textH3Black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:text="@string/result_recomendation"
+        app:layout_constraintBottom_toBottomOf="@+id/btnBack"
+        app:layout_constraintStart_toEndOf="@+id/btnBack"
+        app:layout_constraintTop_toTopOf="@+id/btnBack" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        app:layout_constraintBottom_toTopOf="@id/btnSave"
+        app:layout_constraintTop_toBottomOf="@+id/tv_input" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnHome"
+        style="@style/textH4Black"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_margin="8dp"
+        android:background="@drawable/rounded_bg_button_sec"
+        android:text="@string/home"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="0dp"
+        android:layout_height="160dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:srcCompat="@drawable/logo_2" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

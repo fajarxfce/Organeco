@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="cek_kelayakan_subsidi_pupuk">Cek Kelayakan Subsidi Pupuk</string>
+    <string name="npk">NPK</string>
+    <string name="urea">Urea</string>
+    <string name="luas_lahan_m_sup_2_sup"><![CDATA[Luas Lahan M<sup>2</sup>]]></string>
+</resources>

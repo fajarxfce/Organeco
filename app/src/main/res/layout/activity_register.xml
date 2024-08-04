@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.activity.auth.register.RegisterActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <Button
+            android:id="@+id/btnRegister"
+            style="@style/textH4White"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/rounded_bg_button"
+            android:text="@string/register"
+            android:textAllCaps="false"
+            app:layout_constraintBottom_toTopOf="@+id/textView5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etPassword" />
+
+        <EditText
+            android:id="@+id/edName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="24dp"
+            android:autofillHints=""
+            android:drawableStart="@drawable/ic_baseline_person_24"
+            android:ems="10"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/tv_register"
+            app:layout_constraintTop_toBottomOf="@+id/tvName"
+            tools:ignore="LabelFor" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_register"
+            style="@style/textH1Black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="36dp"
+            android:text="@string/register"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+        <TextView
+            android:id="@+id/tvName"
+            style="@style/textRegular1Green"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="@string/name"
+            app:layout_constraintEnd_toEndOf="@+id/tv_register"
+            app:layout_constraintHorizontal_bias="0.133"
+            app:layout_constraintStart_toStartOf="@+id/tv_register"
+            app:layout_constraintTop_toBottomOf="@+id/tv_register" />
+
+        <TextView
+            android:id="@+id/tvEmail"
+            style="@style/textRegular1Green"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="32dp"
+            android:text="@string/email"
+            app:layout_constraintStart_toStartOf="@+id/edName"
+            app:layout_constraintTop_toBottomOf="@+id/edName" />
+
+        <TextView
+            android:id="@+id/tvPassword"
+            style="@style/textRegular1Green"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="32dp"
+            android:text="@string/password"
+            app:layout_constraintStart_toStartOf="@+id/etEmail"
+            app:layout_constraintTop_toBottomOf="@+id/etEmail" />
+
+        <TextView
+            android:id="@+id/textView5"
+            style="@style/textRegular3Black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="92dp"
+            android:layout_marginBottom="32dp"
+            android:text="@string/have_account"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/btnRegister" />
+
+        <TextView
+            android:id="@+id/tvLogin"
+            style="@style/textH5Green"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginBottom="16dp"
+            android:text="@string/login"
+            app:layout_constraintBottom_toBottomOf="@+id/textView5"
+            app:layout_constraintStart_toEndOf="@+id/textView5"
+            app:layout_constraintTop_toTopOf="@+id/textView5"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <com.organeco.view.customview.EmailCustom
+            android:id="@+id/etEmail"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_baseline_email_24"
+            android:ems="10"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="@+id/edName"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/edName"
+            app:layout_constraintTop_toBottomOf="@+id/tvEmail" />
+
+        <com.organeco.view.customview.PasswordCustom
+            android:id="@+id/etPassword"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_baseline_lock_24"
+            android:ems="10"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="@+id/etEmail"
+            app:layout_constraintStart_toStartOf="@+id/etEmail"
+            app:layout_constraintTop_toBottomOf="@+id/tvPassword" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="136dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/icon_apk" />
+
+        <TextView
+            android:id="@+id/textView30"
+            style="@style/textH1Black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="@string/organeco"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+            app:layout_constraintStart_toEndOf="@+id/imageView3"
+            app:layout_constraintTop_toTopOf="@+id/imageView3" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

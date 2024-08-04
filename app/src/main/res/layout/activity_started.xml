@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/green_700"
+    tools:context=".view.activity.start.StartedActivity">
+
+    <Button
+        android:id="@+id/btnStart"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/rounded_bg_button"
+        android:text="@string/get_started"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/descMenu4" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btbGues"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/rounded_bg_button_three"
+        android:text="@string/guest"
+        android:textColor="@color/gray_100"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/btnStart"
+        app:layout_constraintStart_toStartOf="@+id/btnStart"
+        app:layout_constraintTop_toBottomOf="@+id/btnStart" />
+
+    <ImageView
+        android:id="@+id/ivPlant1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-30dp"
+        android:contentDescription="@string/background_plant"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/img" />
+
+    <ImageView
+        android:id="@+id/logoMenu4"
+        android:layout_width="0dp"
+        android:layout_height="190dp"
+        android:contentDescription="@string/agricultural_practices"
+        android:src="@drawable/image4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.399" />
+
+    <TextView
+        android:id="@+id/descMenu4"
+        style="@style/textRegular1White"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="sans-serif-condensed-light"
+        android:gravity="center_horizontal"
+        android:text="@string/desc_menu_4"
+        app:layout_constraintEnd_toEndOf="@+id/titleMenu4"
+        app:layout_constraintStart_toStartOf="@+id/titleMenu4"
+        app:layout_constraintTop_toBottomOf="@+id/titleMenu4" />
+
+    <TextView
+        android:id="@+id/titleMenu4"
+        style="@style/textH2White"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:gravity="center_horizontal"
+        android:text="@string/title_menu_4"
+        app:layout_constraintEnd_toEndOf="@+id/logoMenu4"
+        app:layout_constraintStart_toStartOf="@+id/logoMenu4"
+        app:layout_constraintTop_toBottomOf="@+id/logoMenu4" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

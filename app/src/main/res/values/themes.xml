@@ -1,0 +1,119 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="Theme.Organeco" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/green_500</item>
+        <item name="colorPrimaryVariant">@color/green_700</item>
+        <item name="colorOnPrimary">@color/gray_100</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/green_700</item>
+        <item name="colorSecondaryVariant">@color/gray_500</item>
+        <item name="colorOnSecondary">@color/gray_700</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="latoBold" parent="TextAppearance.AppCompat">
+        <item name="android:fontFamily">@font/lato_bold</item>
+    </style>
+
+    <style name="latoRegular" parent="TextAppearance.AppCompat">
+        <item name="android:fontFamily">@font/lato_regular</item>
+    </style>
+
+    <style name="textH1Black" parent="latoBold">
+        <item name="android:textColor">@color/green_700</item>
+        <item name="android:textSize">30sp</item>
+    </style>
+
+    <style name="textH2Black" parent="latoBold">
+        <item name="android:textColor">@color/gray_700</item>
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <style name="textH3Black" parent="latoBold">
+        <item name="android:textColor">@color/gray_700</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="textH4Black" parent="latoBold">
+        <item name="android:textColor">@color/gray_700</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="textH5Black" parent="latoBold">
+        <item name="android:textColor">@color/gray_700</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="textH6Black" parent="latoBold">
+        <item name="android:textColor">@color/gray_700</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="textRegular1Black" parent="latoRegular">
+        <item name="android:textColor">@color/gray_700</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="textRegular2Black" parent="latoRegular">
+        <item name="android:textColor">@color/gray_700</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="textRegular3Black" parent="latoRegular">
+        <item name="android:textColor">@color/gray_700</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="textRegular4Black" parent="latoRegular">
+        <item name="android:textColor">@color/gray_700</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="textH5Green" parent="latoBold">
+        <item name="android:textColor">@color/green_700</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="textRegular1Green" parent="latoRegular">
+        <item name="android:textColor">@color/green_700</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="textRegular2Green" parent="latoRegular">
+        <item name="android:textColor">@color/green_700</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="textH1White" parent="latoBold">
+        <item name="android:textColor">@color/gray_100</item>
+        <item name="android:textSize">30sp</item>
+    </style>
+
+    <style name="textH2White" parent="latoBold">
+        <item name="android:textColor">@color/gray_100</item>
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <style name="textH3White" parent="latoBold">
+        <item name="android:textColor">@color/gray_100</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="textH4White" parent="latoBold">
+        <item name="android:textColor">@color/gray_100</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="textRegular1White" parent="latoRegular">
+        <item name="android:textColor">@color/gray_100</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="textRegular2White" parent="latoRegular">
+        <item name="android:textColor">@color/gray_100</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+</resources>

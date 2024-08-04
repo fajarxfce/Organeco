@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view.activity.calculator.CalculatorActivity">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="32dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/btnCalculate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:titleTextColor="@android:color/white" />
+
+            <ImageButton
+                android:id="@+id/btnBack"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/gray_000"
+                android:contentDescription="@string/arrow_back"
+                app:layout_constraintBottom_toBottomOf="@+id/toolbar"
+                app:layout_constraintStart_toStartOf="@+id/toolbar"
+                app:layout_constraintTop_toTopOf="@+id/toolbar"
+                app:srcCompat="@drawable/ic_baseline_arrow_back_24" />
+
+            <View
+                android:id="@+id/view2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray_500"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+            <TextView
+                android:id="@+id/textView3"
+                style="@style/textH3Black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:text="@string/recommendetion_fertilizer"
+                app:layout_constraintBottom_toBottomOf="@+id/btnBack"
+                app:layout_constraintStart_toEndOf="@+id/btnBack"
+                app:layout_constraintTop_toTopOf="@+id/btnBack" />
+
+            <TextView
+                android:id="@+id/tvMoisture"
+                style="@style/textH4Black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="32dp"
+                android:text="@string/temperature"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/temperature_text_input_layout"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                app:boxBackgroundColor="@color/gray_100"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvMoisture">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/ed_temperature"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/tv_humidity"
+                style="@style/textH4Black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:text="@string/humidity"
+                app:layout_constraintStart_toStartOf="@+id/tvMoisture"
+                app:layout_constraintTop_toBottomOf="@+id/temperature_text_input_layout" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/humidity_text_input_layout"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                app:boxBackgroundColor="@color/gray_100"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_humidity">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/ed_humidity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/tv_moisture"
+                style="@style/textH4Black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:text="@string/moisture"
+                app:layout_constraintStart_toStartOf="@+id/tv_humidity"
+                app:layout_constraintTop_toBottomOf="@+id/humidity_text_input_layout" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/moisture_text_input_layout"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                app:boxBackgroundColor="@color/gray_100"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_moisture">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/ed_moisture"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/tv_tipeTanah"
+                style="@style/textH4Black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:text="@string/soil_type"
+                app:layout_constraintStart_toStartOf="@+id/tv_moisture"
+                app:layout_constraintTop_toBottomOf="@+id/moisture_text_input_layout" />
+
+            <Spinner
+                android:id="@+id/spinner_tipeTanah"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:minHeight="48dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_tipeTanah"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <TextView
+                android:id="@+id/tv_tipeTanaman"
+                style="@style/textH4Black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:text="@string/crop_type"
+                app:layout_constraintStart_toStartOf="@+id/tv_tipeTanah"
+                app:layout_constraintTop_toBottomOf="@+id/spinner_tipeTanah" />
+
+            <Spinner
+                android:id="@+id/spinner_tipeTanaman"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:minHeight="48dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_tipeTanaman" />
+
+            <TextView
+                android:id="@+id/tv_nitrogen"
+                style="@style/textH4Black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:text="@string/nitrogen"
+                app:layout_constraintStart_toStartOf="@+id/tv_tipeTanaman"
+                app:layout_constraintTop_toBottomOf="@+id/spinner_tipeTanaman" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/nitrogen_text_input_layout"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                app:boxBackgroundColor="@color/gray_100"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_nitrogen">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/ed_nitrogen"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/tv_potassium"
+                style="@style/textH4Black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:text="@string/potasium"
+                app:layout_constraintStart_toStartOf="@+id/tv_nitrogen"
+                app:layout_constraintTop_toBottomOf="@+id/nitrogen_text_input_layout" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/potassium_text_input_layout"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                app:boxBackgroundColor="@color/gray_100"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_potassium">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/ed_potassium"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/tv_phosphorous"
+                style="@style/textH4Black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:text="@string/phosphorous"
+                app:layout_constraintStart_toStartOf="@+id/tv_potassium"
+                app:layout_constraintTop_toBottomOf="@+id/potassium_text_input_layout" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/phosphorous_text_input_layout"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                app:boxBackgroundColor="@color/gray_100"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_phosphorous">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/ed_phosphorous"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/btnCalculate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnCalculate"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_margin="16dp"
+        android:text="@string/count"
+        android:textAllCaps="false"
+        android:background="@drawable/rounded_bg_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

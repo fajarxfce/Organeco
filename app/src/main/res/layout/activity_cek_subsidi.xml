@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.activity.checksubsidies.CekSubsidiActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:titleTextColor="@android:color/white" />
+
+    <ImageButton
+        android:id="@+id/btnBack"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/gray_000"
+        android:contentDescription="@string/arrow_back"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar"
+        app:layout_constraintStart_toStartOf="@+id/toolbar"
+        app:layout_constraintTop_toTopOf="@+id/toolbar"
+        app:srcCompat="@drawable/ic_baseline_arrow_back_24" />
+
+    <Button
+        android:id="@+id/btnCalculate"
+        style="@style/textH4White"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_margin="8dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/rounded_bg_button"
+        android:text="@string/check_subsidi"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray_500"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <CheckBox
+        android:id="@+id/cb_kelompok_tani"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/farmer_group"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/humidity_text_input_layout" />
+
+    <CheckBox
+        android:id="@+id/cb_kartu_tani"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/farmer_card"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cb_kelompok_tani" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvPupuk">
+
+        <RadioButton
+            android:id="@+id/rb_npk"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="@string/npk" />
+
+        <RadioButton
+            android:id="@+id/rb_urea"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="@string/urea" />
+
+    </RadioGroup>
+
+    <Spinner
+        android:id="@+id/spinner_tanaman"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTanaman" />
+
+    <TextView
+        android:id="@+id/textView3"
+        style="@style/textH3Black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:text="@string/check_subsidi"
+        app:layout_constraintBottom_toBottomOf="@+id/btnBack"
+        app:layout_constraintStart_toEndOf="@+id/btnBack"
+        app:layout_constraintTop_toTopOf="@+id/btnBack" />
+
+    <TextView
+        android:id="@+id/tvTanaman"
+        style="@style/textH4Black"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/plant_type"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <TextView
+        android:id="@+id/tvPupuk"
+        style="@style/textH4Black"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/fertilizer_type"
+        app:layout_constraintEnd_toEndOf="@+id/tvTanaman"
+        app:layout_constraintStart_toStartOf="@+id/tvTanaman"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_tanaman" />
+
+    <TextView
+        android:id="@+id/tv_luas_lahan"
+        style="@style/textH4Black"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/luas_lahan_m_sup_2_sup"
+        app:layout_constraintEnd_toEndOf="@+id/tvPupuk"
+        app:layout_constraintStart_toStartOf="@+id/tvPupuk"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/humidity_text_input_layout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        app:boxBackgroundColor="@color/gray_100"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_luas_lahan">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/ed_luas_lahan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

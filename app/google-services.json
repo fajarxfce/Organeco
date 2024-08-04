@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "950382541040",
+    "firebase_url": "https://soil-moisture-5e63e-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "soil-moisture-5e63e",
+    "storage_bucket": "soil-moisture-5e63e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:950382541040:android:c569e813fc7974da4d6a35",
+        "android_client_info": {
+          "package_name": "com.organeco"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "950382541040-a5oallk2pbn6k370ul7a1u6ctbu3p8pr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCcnAiBgliO5bJ16XDvbZleM1jM9C8ViNI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "950382541040-a5oallk2pbn6k370ul7a1u6ctbu3p8pr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

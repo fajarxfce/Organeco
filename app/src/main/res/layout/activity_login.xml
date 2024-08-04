@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.activity.auth.login.LoginActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btnLogin"
+            style="@style/textH4White"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/rounded_bg_button"
+            android:text="@string/login"
+            android:textAllCaps="false"
+            app:layout_constraintBottom_toTopOf="@+id/textView5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edPassword" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:progressTint="@color/green_700"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_login"
+            style="@style/textH1Black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="36dp"
+            android:text="@string/login"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+        <TextView
+            android:id="@+id/textViewEmail"
+            style="@style/textRegular1Green"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="@string/email"
+            app:layout_constraintEnd_toEndOf="@+id/tv_login"
+            app:layout_constraintHorizontal_bias="0.133"
+            app:layout_constraintStart_toStartOf="@+id/tv_login"
+            app:layout_constraintTop_toBottomOf="@+id/tv_login" />
+
+        <TextView
+            android:id="@+id/textViewPassword"
+            style="@style/textRegular1Green"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="32dp"
+            android:text="@string/password"
+            app:layout_constraintStart_toStartOf="@+id/edEmail"
+            app:layout_constraintTop_toBottomOf="@+id/edEmail" />
+
+        <TextView
+            android:id="@+id/textView5"
+            style="@style/textRegular3Black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="72dp"
+            android:layout_marginBottom="32dp"
+            android:text="@string/not_have_account"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/btnLogin" />
+
+        <TextView
+            android:id="@+id/tvRegister"
+            style="@style/textH5Green"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginBottom="16dp"
+            android:text="@string/register"
+            app:layout_constraintBottom_toBottomOf="@+id/textView5"
+            app:layout_constraintStart_toEndOf="@+id/textView5"
+            app:layout_constraintTop_toTopOf="@+id/textView5"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <com.organeco.view.customview.EmailCustom
+            android:id="@+id/edEmail"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="24dp"
+            android:drawableStart="@drawable/ic_baseline_email_24"
+            android:ems="10"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/tv_login"
+            app:layout_constraintTop_toBottomOf="@+id/textViewEmail" />
+
+        <com.organeco.view.customview.PasswordCustom
+            android:id="@+id/edPassword"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_baseline_lock_24"
+            android:ems="10"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="@+id/edEmail"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/edEmail"
+            app:layout_constraintTop_toBottomOf="@+id/textViewPassword" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="136dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/icon_apk" />
+
+        <TextView
+            android:id="@+id/textView30"
+            style="@style/textH1Black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="@string/organeco"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+            app:layout_constraintStart_toEndOf="@+id/imageView3"
+            app:layout_constraintTop_toTopOf="@+id/imageView3" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

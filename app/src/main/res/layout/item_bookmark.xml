@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="4dp"
+    android:layout_marginEnd="8dp"
+    android:layout_marginBottom="4dp"
+    card_view:cardCornerRadius="10dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/green_700"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/tv_item_name"
+            style="@style/textRegular1White"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="@string/fertilizer_type"
+            card_view:layout_constraintEnd_toEndOf="parent"
+            card_view:layout_constraintStart_toStartOf="@+id/guideline"
+            card_view:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:id="@+id/tv_item_temparature"
+            style="@style/textRegular1White"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/temperature"
+            card_view:layout_constraintStart_toStartOf="@+id/tv_item_name"
+            card_view:layout_constraintTop_toBottomOf="@+id/tv_item_name" />
+
+        <TextView
+            android:id="@+id/textView2"
+            style="@style/textRegular1White"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/temperature"
+            card_view:layout_constraintEnd_toEndOf="@+id/textView28"
+            card_view:layout_constraintStart_toStartOf="@+id/textView28"
+            card_view:layout_constraintTop_toBottomOf="@+id/textView28" />
+
+        <TextView
+            android:id="@+id/textView13"
+            style="@style/textRegular1White"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/humidity"
+            card_view:layout_constraintStart_toStartOf="parent"
+            card_view:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+        <TextView
+            android:id="@+id/tv_item_humidity"
+            style="@style/textRegular1White"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/humidity"
+            card_view:layout_constraintStart_toStartOf="@+id/guideline"
+            card_view:layout_constraintTop_toBottomOf="@+id/tv_item_temparature" />
+
+        <TextView
+            android:id="@+id/textView15"
+            style="@style/textRegular1White"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/moisture"
+            card_view:layout_constraintEnd_toEndOf="@+id/textView13"
+            card_view:layout_constraintStart_toStartOf="@+id/textView13"
+            card_view:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+        <TextView
+            android:id="@+id/tv_item_moisture"
+            style="@style/textRegular1White"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/moisture"
+            card_view:layout_constraintStart_toStartOf="@+id/guideline"
+            card_view:layout_constraintTop_toBottomOf="@+id/tv_item_humidity" />
+
+        <TextView
+            android:id="@+id/textView17"
+            style="@style/textRegular1White"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/soil_type"
+            card_view:layout_constraintStart_toStartOf="@+id/textView15"
+            card_view:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+        <TextView
+            android:id="@+id/tv_item_soil_type"
+            style="@style/textRegular1White"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="@string/soil_type"
+            card_view:layout_constraintBottom_toBottomOf="@+id/textView17"
+            card_view:layout_constraintEnd_toEndOf="@+id/tv_item_name"
+            card_view:layout_constraintStart_toStartOf="@+id/guideline"
+            card_view:layout_constraintTop_toTopOf="@+id/textView17" />
+
+        <TextView
+            android:id="@+id/textView18"
+            style="@style/textRegular1White"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/crop_type"
+            card_view:layout_constraintStart_toStartOf="@+id/textView17"
+            card_view:layout_constraintTop_toBottomOf="@+id/textView17" />
+
+        <TextView
+            android:id="@+id/tv_item_crop_type"
+            style="@style/textRegular1White"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/crop_type"
+            card_view:layout_constraintBottom_toBottomOf="@+id/textView18"
+            card_view:layout_constraintStart_toStartOf="@+id/guideline"
+            card_view:layout_constraintTop_toTopOf="@+id/textView18" />
+
+        <TextView
+            android:id="@+id/textView19"
+            style="@style/textRegular1White"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/nitrogen"
+            card_view:layout_constraintStart_toStartOf="@+id/textView18"
+            card_view:layout_constraintTop_toBottomOf="@+id/textView18" />
+
+        <TextView
+            android:id="@+id/tv_item_nitrogen"
+            style="@style/textRegular1White"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/nitrogen"
+            card_view:layout_constraintBottom_toBottomOf="@+id/textView19"
+            card_view:layout_constraintStart_toStartOf="@+id/guideline"
+            card_view:layout_constraintTop_toTopOf="@+id/textView19" />
+
+        <TextView
+            android:id="@+id/textView21"
+            style="@style/textRegular1White"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/potasium"
+            card_view:layout_constraintStart_toStartOf="@+id/textView19"
+            card_view:layout_constraintTop_toBottomOf="@+id/textView19" />
+
+        <TextView
+            android:id="@+id/tv_item_potassium"
+            style="@style/textRegular1White"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/potasium"
+            card_view:layout_constraintBottom_toBottomOf="@+id/textView21"
+            card_view:layout_constraintStart_toStartOf="@+id/guideline"
+            card_view:layout_constraintTop_toTopOf="@+id/textView21" />
+
+        <TextView
+            android:id="@+id/textView23"
+            style="@style/textRegular1White"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/phosphorous"
+            card_view:layout_constraintStart_toStartOf="@+id/textView21"
+            card_view:layout_constraintTop_toBottomOf="@+id/textView21" />
+
+        <TextView
+            android:id="@+id/tv_item_phosphorous"
+            style="@style/textRegular1White"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/phosphorous"
+            card_view:layout_constraintBottom_toBottomOf="@+id/textView23"
+            card_view:layout_constraintStart_toStartOf="@+id/guideline"
+            card_view:layout_constraintTop_toTopOf="@+id/textView23" />
+
+        <TextView
+            android:id="@+id/textView14"
+            style="@style/textRegular1White"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:text="@string/colon"
+            card_view:layout_constraintBottom_toBottomOf="@+id/textView2"
+            card_view:layout_constraintEnd_toStartOf="@+id/guideline"
+            card_view:layout_constraintTop_toTopOf="@+id/textView2" />
+
+        <TextView
+            android:id="@+id/textView16"
+            style="@style/textRegular1White"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:text="@string/colon"
+            card_view:layout_constraintEnd_toStartOf="@+id/guideline"
+            card_view:layout_constraintTop_toTopOf="@+id/textView13" />
+
+        <TextView
+            android:id="@+id/textView20"
+            style="@style/textRegular1White"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:text="@string/colon"
+            card_view:layout_constraintBottom_toBottomOf="@+id/textView15"
+            card_view:layout_constraintEnd_toStartOf="@+id/tv_item_moisture"
+            card_view:layout_constraintTop_toTopOf="@+id/textView15" />
+
+        <TextView
+            android:id="@+id/textView22"
+            style="@style/textRegular1White"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:text="@string/colon"
+            card_view:layout_constraintBottom_toBottomOf="@+id/textView17"
+            card_view:layout_constraintEnd_toStartOf="@+id/tv_item_soil_type"
+            card_view:layout_constraintTop_toTopOf="@+id/textView17" />
+
+        <TextView
+            android:id="@+id/textView24"
+            style="@style/textRegular1White"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:text="@string/colon"
+            card_view:layout_constraintBottom_toBottomOf="@+id/textView18"
+            card_view:layout_constraintEnd_toStartOf="@+id/tv_item_crop_type"
+            card_view:layout_constraintTop_toTopOf="@+id/textView18" />
+
+        <TextView
+            android:id="@+id/textView25"
+            style="@style/textRegular1White"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:text="@string/colon"
+            card_view:layout_constraintBottom_toBottomOf="@+id/textView19"
+            card_view:layout_constraintEnd_toStartOf="@+id/tv_item_nitrogen"
+            card_view:layout_constraintTop_toTopOf="@+id/textView19" />
+
+        <TextView
+            android:id="@+id/textView26"
+            style="@style/textRegular1White"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:text="@string/colon"
+            card_view:layout_constraintBottom_toBottomOf="@+id/textView21"
+            card_view:layout_constraintEnd_toStartOf="@+id/tv_item_potassium"
+            card_view:layout_constraintTop_toTopOf="@+id/textView21" />
+
+        <TextView
+            android:id="@+id/textView27"
+            style="@style/textRegular1White"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:text="@string/colon"
+            card_view:layout_constraintBottom_toBottomOf="@+id/textView23"
+            card_view:layout_constraintEnd_toStartOf="@+id/tv_item_phosphorous"
+            card_view:layout_constraintTop_toTopOf="@+id/textView23" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            card_view:layout_constraintGuide_begin="160dp" />
+
+        <TextView
+            style="@style/textRegular1White"
+            android:id="@+id/textView28"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fertilizer_type"
+            card_view:layout_constraintStart_toStartOf="parent"
+            card_view:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView29"
+            style="@style/textRegular1White"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:text="@string/colon"
+            card_view:layout_constraintBottom_toBottomOf="@+id/textView28"
+            card_view:layout_constraintEnd_toStartOf="@+id/guideline"
+            card_view:layout_constraintTop_toTopOf="@+id/textView28"
+            card_view:layout_constraintVertical_bias="0.0" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
