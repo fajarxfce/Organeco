@@ -125,14 +125,7 @@ class CalculatorActivity : AppCompatActivity() {
             .build()
 
         calculatorViewModel.postCalculate(
-            temperature,
-            humidity,
-            moisture,
-            soilType,
-            cropType,
-            nitrogen,
-            potassium,
-            phosphorous
+            request
         ).observe(this) {
             when (it) {
                 is MediatorResult.Loading -> {
