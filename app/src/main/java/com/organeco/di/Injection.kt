@@ -10,14 +10,14 @@ import com.organeco.model.remote.respository.ApiRepository
 object Injection {
     fun provideRepository(context: Context): ApiRepository {
         return ApiRepository(
-            ApiConfig.setApiService(),
+            ApiConfig.getInstance(),
             AuthenticationPreference.getInstance(context.dataStore)
         )
     }
 
     fun provideRepositoryMl(context: Context): ApiRepository {
         return ApiRepository(
-            ApiConfigMl.setApiService(),
+            ApiConfigMl.getInstance(),
             AuthenticationPreference.getInstance(context.dataStore)
         )
     }
