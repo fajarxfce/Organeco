@@ -3,6 +3,8 @@ package com.organeco.model.remote.respository
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.asLiveData
 import androidx.lifecycle.liveData
+import com.organeco.adapter.UserDetailsAdapter
+import com.organeco.model.User
 import com.organeco.model.local.preferences.AuthenticationPreference
 import com.organeco.model.remote.ApiService
 import com.organeco.model.remote.factory.ApiServiceFactory
@@ -30,6 +32,17 @@ class ApiRepository(
                 emit(MediatorResult.Error(e.message.toString()))
             }
         }
+    }
+
+    fun getUserDetails(): UserDetailsAdapter {
+        val user = User(
+            userName = preferences.getNameKey().asLiveData().value ?: "",
+            email = preferences.getEmailKey().asLiveData().value ?: "",
+            tokenKey = preferences.getTokenKey().asLiveData().value ?: "",
+            userId = preferences.getUserId().asLiveData().value ?: "",
+            onBoardStatus = preferences.getOnBoardStatus().asLiveData().value ?: false
+        )
+        return UserDetailsAdapter(user)
     }
 
     suspend fun postRegister(

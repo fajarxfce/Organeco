@@ -8,7 +8,9 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import com.organeco.databinding.FragmentProfileBinding
+import com.organeco.model.remote.respository.ApiRepository
 import com.organeco.view.activity.auth.login.LoginActivity
+import com.organeco.viewmodel.MainViewModel
 import com.organeco.viewmodel.UserPreferencesVM
 import com.organeco.viewmodel.ViewModelFactory
 
@@ -19,6 +21,9 @@ class ProfileFragment : Fragment() {
             requireContext()
         )
     }
+
+//    private val apiRepository = ApiRepository() // Initialize with necessary parameters
+//    private val mainViewModel: MainViewModel by viewModels { MainViewModelFactory(apiRepository) }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
