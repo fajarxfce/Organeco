@@ -5,6 +5,7 @@ import androidx.lifecycle.asLiveData
 import androidx.lifecycle.liveData
 import com.organeco.model.local.preferences.AuthenticationPreference
 import com.organeco.model.remote.ApiService
+import com.organeco.model.remote.factory.ApiServiceFactory
 import com.organeco.model.remote.response.CalculatorResponse
 import com.organeco.model.remote.response.LoginResponse
 import com.organeco.model.remote.response.RegisterResponse
@@ -12,7 +13,7 @@ import com.organeco.model.remote.utils.MediatorResult
 import com.organeco.view.utils.wrapperIdling
 
 class ApiRepository(
-    private val apiService: ApiService,
+    private val apiService: ApiService = ApiServiceFactory.createApiService(ApiServiceFactory.ApiType.DEFAULT),
     private val preferences: AuthenticationPreference
 ) {
 
