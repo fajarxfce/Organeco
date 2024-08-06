@@ -125,7 +125,7 @@
             app:layout_constraintTop_toTopOf="@+id/textView5"
             app:layout_constraintVertical_bias="0.0" />
 
-        <com.organeco.view.customview.EmailCustom
+        <com.srp.view.customview.EmailCustom
             android:id="@+id/etEmail"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -137,7 +137,7 @@
             app:layout_constraintStart_toStartOf="@+id/edName"
             app:layout_constraintTop_toBottomOf="@+id/tvEmail" />
 
-        <com.organeco.view.customview.PasswordCustom
+        <com.srp.view.customview.PasswordCustom
             android:id="@+id/etPassword"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -164,7 +164,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
-            android:text="@string/organeco"
+            android:text="@string/srp"
             app:layout_constraintBottom_toBottomOf="@+id/imageView3"
             app:layout_constraintStart_toEndOf="@+id/imageView3"
             app:layout_constraintTop_toTopOf="@+id/imageView3" />

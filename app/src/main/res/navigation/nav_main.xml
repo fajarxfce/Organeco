@@ -7,19 +7,19 @@
 
     <activity
         android:id="@+id/mainActivity"
-        android:name="com.organeco.view.activity.MainActivity"
+        android:name="com.srp.view.activity.MainActivity"
         android:label="Main Activity"
         tools:layout="@layout/activity_main" />
 
     <fragment
         android:id="@+id/homeFragment"
-        android:name="com.organeco.view.fragment.home.HomeFragment"
+        android:name="com.srp.view.fragment.home.HomeFragment"
         android:label="fragment home"
         tools:layout="@layout/fragment_home" />
 
     <fragment
         android:id="@+id/bookmarkFragment"
-        android:name="com.organeco.view.fragment.bookmark.BookmarkFragment"
+        android:name="com.srp.view.fragment.bookmark.BookmarkFragment"
         android:label="bookmark fragment"
         tools:layout="@layout/fragment_bookmark">
 
@@ -27,7 +27,7 @@
 
     <fragment
         android:id="@+id/profileFragment"
-        android:name="com.organeco.view.fragment.profile.ProfileFragment"
+        android:name="com.srp.view.fragment.profile.ProfileFragment"
         android:label="@string/profile"
         tools:layout="@layout/fragment_profile"></fragment>
 

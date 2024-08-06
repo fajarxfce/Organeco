@@ -8,15 +8,37 @@
     tools:context=".view.activity.start.SplashScreenActivity">
 
     <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="203dp"
-        android:layout_height="191dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginEnd="24dp"
-        android:contentDescription="@string/logo_organeco"
+        android:id="@+id/logoMenu4"
+        android:layout_width="0dp"
+        android:layout_height="190dp"
+        android:contentDescription="@string/agricultural_practices"
+        android:src="@drawable/image4"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/splash" />
+        app:layout_constraintVertical_bias="0.399" />
+
+    <TextView
+        android:id="@+id/tv_app_name"
+        style="@style/textH1White"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="SRP"
+        android:textSize="46dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logoMenu4" />
+
+    <TextView
+        style="@style/textH1White"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="(Sistem Rekomendasi Pupuk)"
+        android:textSize="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/tv_app_name"
+        app:layout_constraintStart_toStartOf="@+id/tv_app_name"
+        app:layout_constraintTop_toBottomOf="@+id/tv_app_name" />
 </androidx.constraintlayout.widget.ConstraintLayout>

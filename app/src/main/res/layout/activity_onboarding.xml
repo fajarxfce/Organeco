@@ -40,7 +40,7 @@
         android:layout_width="0dp"
         android:layout_height="300dp"
         android:layout_marginStart="16dp"
-        android:contentDescription="@string/logo_organeco"
+        android:contentDescription="@string/logo_srp"
         android:src="@drawable/image1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="parent"

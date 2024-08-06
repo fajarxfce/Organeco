@@ -4,7 +4,7 @@
         <item>@drawable/slide2</item>
         <item>@drawable/slide3</item>
     </integer-array>
-    <string name="app_name">Organeco</string>
+    <string name="app_name">SRP</string>
     <string name="register">Daftar</string>
     <string name="name">Nama</string>
     <string name="name_account">Nama Akun</string>
@@ -13,11 +13,11 @@
     <string name="not_have_account">Belum punya akun?</string>
     <string name="have_account">Sudah punya akun?</string>
     <string name="login">Masuk</string>
-    <string name="title_menu_1">Organeco</string>
+    <string name="title_menu_1">SRP</string>
     <string name="title_menu_2">Emisi Gas Rumah Kaca</string>
     <string name="title_menu_3">Daur Ulang Kompos</string>
     <string name="title_menu_4">Optimalkan Praktik Pertanian Anda!"</string>
-    <string name="desc_menu_1">Organeco, aplikasi inovatif untuk petani atau pengkebun, memberikan rekomendasi pupuk ramah lingkungan melalui analisis tanah dan panduan penggunaan pupuk organik.</string>
+    <string name="desc_menu_1">SRP (Sistem Rekomendasi Pupuk), adalah aplikasi inovatif untuk petani atau pengkebun, memberikan rekomendasi pupuk ramah lingkungan melalui analisis tanah dan panduan penggunaan pupuk organik.</string>
     <string name="desc_menu_2">Dapat membuat suatu metode atau teknik penggunaan pupuk organik yang tidak menghasilkan gas emisi yang merugikan lingkungan.</string>
     <string name="desc_menu_3">Aplikasi yang dirancang untuk membantu petani dan individu yang terlibat dalam pertanian dalam menggunakan pupuk yang ramah lingkungan.</string>
     <string name="desc_menu_4">"Ubah praktik pertanianmu dan perkebunanmu, kurangi dampak negatif, dan beralih ke pupuk ramah lingkungan dengan aplikasi ini!"</string>
@@ -48,7 +48,7 @@
     <string name="vegetable">Sayuran</string>
     <string name="description_detail">Deskripsi</string>
     <string name="button_share">Tombol Button Share Content</string>
-    <string name="logo_organeco">Logo Organeco</string>
+    <string name="logo_srp">Logo SRP</string>
     <string name="halo">Halo, </string>
     <string name="fertilizer_that_is_often_used">Pupuk yang sering dipakai</string>
     <string name="iot_moisture">IoT Kelembapan</string>
@@ -80,7 +80,7 @@
     <string name="fertilizer_that_suits_you">Pupuk yang cocok untukmu adalah</string>
     <string name="crop_type">Jenis Tanaman</string>
     <string name="colon">:</string>
-    <string name="organeco">Organeco</string>
+    <string name="srp">SRP</string>
     <string name="no_data">Tidak ada data</string>
 
     <string-array name="Jenis_tanah">
