@@ -13,6 +13,15 @@ object ApiServiceFactory {
         DEFAULT, ML
     }
 
+    @Volatile
+    private var instance: ApiService? = null
+
+    fun getInstance(type: ApiType): ApiService {
+        return instance ?: synchronized(this) {
+            instance ?: createApiService(type).also { instance = it }
+        }
+    }
+
     fun createApiService(type: ApiType): ApiService {
         val baseUrl = when (type) {
             ApiType.DEFAULT -> BuildConfig.BASE_URL
